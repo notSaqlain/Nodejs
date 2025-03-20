@@ -12,12 +12,13 @@ app.listen(port, () => {
 })
 */
 
-const port = 3000
+const port = 3000;
 var http = require('http');
 var dt = require('./Date');
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.write("The date and time are currently: " + dt.myDateTime());
+  console.log("The date and time are currently: " + dt.myDateTime());
   res.end();
 }).listen(port);
