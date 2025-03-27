@@ -1,0 +1,521 @@
+Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di due file di testo: <code>first.txt</code> e <code>second.txt</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di due file di testo: <code>first.txt</code> e <code>second.txt</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di due file di testo: <code>first.txt</code> e <code>second.txt</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>Here is the result : <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Sync Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FS Sync Example</h1>
+    <img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
+    <p>
+      Questo file JavaScript utilizza il modulo <code>fs</code> di Node.js per leggere e scrivere file in modo sincrono. 
+      Esegue le seguenti operazioni:
+    </p>
+    <ul>
+      <li>Legge il contenuto di un file di testo: <code>index.html</code>.</li>
+      <li>Scrive il risultato combinato in un nuovo file chiamato <code>result-sync.txt</code>.</li>
+      <li>Stampa messaggi di log per indicare l'inizio e la fine delle operazioni.</li>
+    </ul>
+    <p>
+      Questo approccio è utile per operazioni semplici, ma può bloccare il thread principale in applicazioni più grandi.
+    </p>
+  </div>
+</body>
+</html>
