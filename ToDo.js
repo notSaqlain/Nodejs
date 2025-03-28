@@ -11,13 +11,13 @@ let todo = [];
 function askTask() {
     rl.question('Inserisci un\'attività (o digita "fine" per terminare): ', (input) => {
         if (input.toLowerCase() === 'fine') {
-            const jsonData = JSON.stringify({ Task: todo }, null, 2);
+            const jsonData = JSON.stringify({ Tasks: todo }, null, 2);
 
             fs.writeFile('tasks.json', jsonData, (err) => {
                 if (err) {
                     console.error('Errore durante il salvataggio del file:', err);
                 } else {
-                    console.log('Attività salvate in attività.json!');
+                    console.log('Attività salvate in tasks.json!');
                 }
 
                 rl.close();
