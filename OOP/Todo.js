@@ -1,41 +1,55 @@
 class ToDo {
+    #id;
+    #name;
+    #description;
+    #isCompleted;
+
     constructor(id, name, description, isCompleted) {
-        this._id = id;
-        this._name = name;
-        this._description = description;
-        this._isCompleted = isCompleted;
+        this.#id = id;
+        this.#name = name;
+        this.#description = description;
+        this.#isCompleted = isCompleted;
     }
 
     get name() {
-        return this._name;
+        return this.#name;
     }
 
     get id() {
-        return this._id;
+        return this.#id;
     }
 
     get description() {
-        return this._description;
+        return this.#description;
     }
 
     get isCompleted() {
-        return this._isCompleted;
+        return this.#isCompleted;
     }
 
     set name(newName) {
-        this._name = newName;
+        this.#name = newName;
     }
 
     set id(newId) {
-        this._id = newId;
+        this.#id = newId;
     }
 
     set description(newDescription) {
-        this._description = newDescription;
+        this.#description = newDescription;
     }
 
     set isCompleted(newIsCompleted) {
-        this._isCompleted = newIsCompleted;
+        this.#isCompleted = newIsCompleted;
+    }
+
+    toJSON() {
+        return {
+            id: this.#id,
+            name: this.#name,
+            description: this.#description,
+            isCompleted: this.#isCompleted
+        };
     }
 }
 
