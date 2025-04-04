@@ -64,32 +64,43 @@ function SalvaTasks(tasks) {
     }
 }
 
+function getId(tasks) {
+    const idd= new Set(tasks.map(t => t.id));
+    let newId = 1;
+
+    while (idd.has(newId)) {
+        newId++;
+    }
+
+    return newId;
+}
+
 function addTask() {
     console.log('\n----- aggiungi nuova task -----');
- 
+
     const tasks = LeggiTasks();
-    const newId = tasks.length > 0 ? Math.max(...tasks.map(t => t.id)) + 1 : 1;
-    
+    const newId = getId(tasks);
+
     rl.question('nome task: ', (name) => {
         if (!name.trim()) {
             console.log('la task deve avere un nome, riprova');
             return addTask();
         }
-        
+
         rl.question('descrizione task: ', (description) => {
             if (!description.trim()) {
                 console.log('la descrizione della task deve esserci per forza, riprova');
                 return addTask();
             }
-            
+
             // Create new task
             const newTask = new ToDo(newId, name, description, false);
             tasks.push(newTask);
-            SalvaTasks(tasks);
-            
+            SalvaTasks(tasks); // Save the updated task list
+
             console.log(`Task "${name}" aggiunta con ID ${newId}`);
             console.log('-------------------------');
-            Menu();
+            Menu(); // Return to the menu
         });
     });
 }
