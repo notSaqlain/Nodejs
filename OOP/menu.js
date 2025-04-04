@@ -7,16 +7,14 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// Data file path
-const DATA_FILE = 'tasks.json';
+const file = 'tasks.gionson';
 
-// Menu Functions
-function displayMenu() {
-    console.log('\n===== Task Management System =====');
-    console.log('1. Add Task');
-    console.log('2. Remove Task');
-    console.log('3. View Tasks');
-    console.log('4. Exit');
+function Menu() {
+    console.log('\n===== sistema gestione task =====');
+    console.log('1. aggiungi task');
+    console.log('2. rimuovi task');
+    console.log('3. visualizza task');
+    console.log('4. esci');
     console.log('==================================');
 
     rl.question('Enter your choice (1-4): ', (choice) => {
@@ -31,130 +29,126 @@ function displayMenu() {
                 viewTasks();
                 break;
             case '4':
-                console.log('Exiting Task Management System. Goodbye!');
+                console.log('arivederci!');
                 rl.close();
                 break;
             default:
-                console.log('Invalid choice. Please try again.');
-                displayMenu();
+                console.log('scelta non valida, riprova');
+                Menu();
                 break;
         }
     });
 }
 
-// Load tasks from JSON file
-function loadTasks() {
+
+function LeggiTasks() {
     try {
-        if (fs.existsSync(DATA_FILE)) {
-            const data = fs.readFileSync(DATA_FILE, 'utf8');
+        if (fs.existsSync(file)) {
+            const data = fs.readFileSync(file, 'utf8');
             return JSON.parse(data).Tasks || [];
         }
         return [];
     } catch (error) {
-        console.error('Error loading tasks:', error.message);
+        console.error('errore nel caricamento della task', error.message);
         return [];
     }
 }
 
-// Save tasks to JSON file
-function saveTasks(tasks) {
+function SalvaTasks(tasks) {
     try {
         const jsonData = JSON.stringify({ Tasks: tasks }, null, 2);
-        fs.writeFileSync(DATA_FILE, jsonData);
-        console.log('Tasks saved successfully!');
+        fs.writeFileSync(file, jsonData);
+        console.log('task salvata');
     } catch (error) {
-        console.error('Error saving tasks:', error.message);
+        console.error('errore nel salvataggio della task', error.message);
     }
 }
 
-// Function to add a new task
 function addTask() {
-    console.log('\n----- Add New Task -----');
-    
-    // Generate a new ID based on existing tasks
-    const tasks = loadTasks();
+    console.log('\n----- aggiungi nuova task -----');
+ 
+    const tasks = LeggiTasks();
     const newId = tasks.length > 0 ? Math.max(...tasks.map(t => t.id)) + 1 : 1;
     
     rl.question('Enter task name: ', (name) => {
         if (!name.trim()) {
-            console.log('Task name cannot be empty. Please try again.');
+            console.log('la task deve avere un nome, riprova');
             return addTask();
         }
         
-        rl.question('Enter task description: ', (description) => {
+        rl.question('descrizione task: ', (description) => {
             if (!description.trim()) {
-                console.log('Task description cannot be empty. Please try again.');
+                console.log('la descrizione della task deve esserci per forza, riprova');
                 return addTask();
             }
             
             // Create new task
             const newTask = new ToDo(newId, name, description, false);
             tasks.push(newTask);
-            saveTasks(tasks);
+            SalvaTasks(tasks);
             
-            console.log(`Task "${name}" added successfully with ID: ${newId}`);
+            console.log(`Task "${name}" aggiunta con ID ${newId}`);
             console.log('-------------------------');
-            displayMenu();
+            Menu();
         });
     });
 }
 
-// Function to remove a task
 function removeTask() {
-    console.log('\n----- Remove Task -----');
-    const tasks = loadTasks();
+    console.log('\n----- rimuovi task -----');
+    const tasks = LeggiTasks();
     
     if (tasks.length === 0) {
-        console.log('No tasks available to remove.');
+        console.log('nessuna task da rimuovere disponibile.');
         console.log('------------------------');
-        return displayMenu();
+        return Menu();
     }
     
-    console.log('Available tasks:');
+    console.log('trask disponibil:');
     tasks.forEach(task => {
-        console.log(`ID: ${task.id} | Name: ${task.name} | Completed: ${task.isCompleted ? 'Yes' : 'No'}`);
+        console.log(`ID: ${task.id} | nome: ${task.name} | completata: ${task.isCompleted ? 'Si' : 'No'}`);
     });
     
-    rl.question('\nEnter the ID of the task to remove: ', (idStr) => {
+    rl.question('\nscrivi l\' id della task da rimuovere: ', (idStr) => {
         const id = parseInt(idStr);
         
         if (isNaN(id)) {
-            console.log('Invalid ID. Please enter a number.');
+            console.log('id non valido.');
             return removeTask();
         }
         
         const taskIndex = tasks.findIndex(task => task.id === id);
         
         if (taskIndex === -1) {
-            console.log(`No task found with ID ${id}. Please try again.`);
+            console.log(`nessuna task con id ${id} trovata. riprova.`);
             return removeTask();
         }
         
         const taskToRemove = tasks[taskIndex];
         
-        rl.question(`Are you sure you want to remove task "${taskToRemove.name}"? (y/n): `, (answer) => {
-            if (answer.toLowerCase() === 'y' || answer.toLowerCase() === 'yes') {
+        rl.question(`sei sicuro di voler rimuovere la task "${taskToRemove.name}"? (s/n): `, (answer) => {
+            if (answer.toLowerCase() === 's' || answer.toLowerCase() === 'si') {
                 tasks.splice(taskIndex, 1);
-                saveTasks(tasks);
-                console.log(`Task "${taskToRemove.name}" removed successfully.`);
+                SalvaTasks(tasks);
+                console.log(`Task "${taskToRemove.name}" rimossa`);
             } else {
-                console.log('Task removal cancelled.');
+                console.log('rimozione task cancellata');
             }
             console.log('------------------------');
-            displayMenu();
+            Menu();
         });
     });
 }
 
-// Function to view all tasks
+
 function viewTasks() {
-    console.log('\n----- Task List -----');
-    const tasks = loadTasks();
+    console.log('\n----- lista task -----');
+    const tasks = LeggiTasks();
     
     if (tasks.length === 0) {
-        console.log('No tasks available.');
-    } else {
-        console.log('ID | Name | Description | Status');
+        console.log('non ci sono task');
+    } else { 
+        console.log('ID | nome | descrizione | stato');
         console.log('--------------------------------');
         tasks.forEach(task => {
             console.log(`${task.id} | ${task.name} | ${task.description} | ${task.isCompleted ? 'Completed' : 'Pending'}`);
@@ -162,14 +156,13 @@ function viewTasks() {
     }
     
     console.log('---------------------');
-    displayMenu();
+    Menu();
 }
 
-// Export menu functions
 module.exports = {
-    displayMenu,
-    loadTasks,
-    saveTasks,
+    Menu,
+    LeggiTasks,
+    SalvaTasks,
     addTask,
     removeTask,
     viewTasks,
