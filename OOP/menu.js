@@ -7,7 +7,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const file = 'tasks.gionson';
+const file = 'tasks.json';
 
 function Menu() {
     console.log('\n===== sistema gestione task =====');
@@ -17,7 +17,7 @@ function Menu() {
     console.log('4. esci');
     console.log('==================================');
 
-    rl.question('Enter your choice (1-4): ', (choice) => {
+    rl.question('scelta (1-4): ', (choice) => {
         switch (choice) {
             case '1':
                 addTask();
