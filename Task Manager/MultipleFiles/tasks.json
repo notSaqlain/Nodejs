@@ -29,12 +29,6 @@
       "name": "a",
       "description": "b",
       "isCompleted": false
-    },
-    {
-      "id": 4,
-      "name": "v",
-      "description": "b",
-      "isCompleted": false
     }
   ]
 }

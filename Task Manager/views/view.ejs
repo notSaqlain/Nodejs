@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tasks</title>
+</head>
+<body>
+    <h1>Task List</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
+        <% tasks.forEach(task => { %>
+            <tr>
+                <td><%= task.id %></td>
+                <td><%= task.name %></td>
+                <td><%= task.description %></td>
+                <td><%= task.isCompleted ? 'Completed' : 'Pending' %></td>
+            </tr>
+        <% }) %>
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>

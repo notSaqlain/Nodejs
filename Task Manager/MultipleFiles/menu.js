@@ -169,6 +169,23 @@ function viewTasks() {
     Menu();
 }
 
+function addTask(name, description) {
+    const tasks = LeggiTasks();
+    const newId = getId(tasks);
+    const newTask = new ToDo(newId, name, description, false);
+    tasks.push(newTask);
+    SalvaTasks(tasks);
+}
+
+function removeTask(id) {
+    const tasks = LeggiTasks();
+    const taskIndex = tasks.findIndex(task => task.id === parseInt(id));
+    if (taskIndex !== -1) {
+        tasks.splice(taskIndex, 1);
+        SalvaTasks(tasks);
+    }
+}
+
 module.exports = {
     Menu,
     LeggiTasks,
