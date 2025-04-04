@@ -95,7 +95,7 @@ function addTask() {
 
             const newTask = new ToDo(newId, name, description, false);
             tasks.push(newTask);
-            SalvaTasks(tasks); // Save the updated task list
+            SalvaTasks(tasks);
 
             console.log(`Task "${name}" aggiunta con ID ${newId}`);
             console.log('-------------------------');
@@ -119,7 +119,7 @@ function removeTask() {
         console.log(`ID: ${task.id} | nome: ${task.name} | completata: ${task.isCompleted ? 'Si' : 'No'}`);
     });
     
-    rl.question('\nscrivi l\' id della task da rimuovere: ', (idStr) => {
+    rl.question('\nscrivi l\'id della task da rimuovere: ', (idStr) => {
         const id = parseInt(idStr);
         
         if (isNaN(id)) {
