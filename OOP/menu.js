@@ -93,14 +93,13 @@ function addTask() {
                 return addTask();
             }
 
-            // Create new task
             const newTask = new ToDo(newId, name, description, false);
             tasks.push(newTask);
             SalvaTasks(tasks); // Save the updated task list
 
             console.log(`Task "${name}" aggiunta con ID ${newId}`);
             console.log('-------------------------');
-            Menu(); // Return to the menu
+            Menu();
         });
     });
 }
