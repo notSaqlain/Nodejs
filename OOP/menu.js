@@ -70,7 +70,7 @@ function addTask() {
     const tasks = LeggiTasks();
     const newId = tasks.length > 0 ? Math.max(...tasks.map(t => t.id)) + 1 : 1;
     
-    rl.question('Enter task name: ', (name) => {
+    rl.question('nome task: ', (name) => {
         if (!name.trim()) {
             console.log('la task deve avere un nome, riprova');
             return addTask();
