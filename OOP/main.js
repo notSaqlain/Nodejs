@@ -1,16 +1,16 @@
-const fs = require('fs');
-const ToDo = require('./Todo');
+// Main application for Task Management System
+const menu = require('./menu');
 
-const task = new ToDo(5, "task1", "questa è la mia prima task", false);
+// Start the menu system
+menu.displayMenu();
 
-const jsonData = JSON.stringify({ Tasks: [task] }, null, 2);
+// Handle application exit
+process.on('exit', () => {
+    console.log('Task Management System closed.');
+});
 
-console.log(jsonData);
-
-fs.writeFile('tasks.json', jsonData, (err) => {
-    if (err) {
-        console.error('Errore durante il salvataggio del file:', err);
-    } else {
-        console.log('Attività salvata in tasks.json!');
-    }
+// Handle CTRL+C exit
+process.on('SIGINT', () => {
+    menu.rl.close();
+    process.exit(0);
 });
